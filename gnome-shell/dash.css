@@ -1,0 +1,193 @@
+/* Dash */
+
+#dash {
+    spacing: 5px;
+    color: #000;
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: inset -1px 0px 0px 0px rgba(255,255,255,0.2);
+    border-left: 0px;
+    border-radius: 0px 4px 4px 0px;
+    padding: 3px;
+}
+
+#dash:rtl {
+    border-left: 1px;
+    border-right: 0px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#dash:empty {
+    height: 100px;
+    width: 50px;
+}
+
+.dash-placeholder {
+    background-image: url("img/dash-placeholder.svg");
+}
+
+#viewSelector {
+    spacing: 1em;
+}
+
+#viewSelectorTabBar {
+    padding: 1em;
+}
+
+#searchArea {
+    padding: 0px 24px;
+}
+
+#searchEntry {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.2);
+    background-gradient-start: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: outset 0px 1px 0px 0px rgba(255,255,255,0.3);
+    caret-color: rgba(255,255,255,0.8);
+    caret-size: 1px;
+    color: rgba(255,255,255,0.8);
+    font-weight: bold;
+    font: 8pt;
+    height: 19px;
+    padding: 3px 3px;
+    width: 250px;
+    transition-duration: 300;
+}
+
+
+#searchEntry:hover {
+    border: 1px solid rgba(0,0,0,0.3);
+    transition-duration: 300;
+}
+
+#searchEntry:focus {
+    font-weight: bold;
+    transition-duration: 0;
+}
+
+.search-entry-icon {
+    icon-size: 1.2em;
+}
+
+#searchResults {
+    padding: 20px 10px 10px 10px;
+    spacing: 18px;
+}
+
+#searchResultsContent {
+    padding-right: 20px;
+    spacing: 36px;
+}
+
+#searchResultsContent:rtl {
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+.search-statustext,
+.search-section-header {
+    padding: 4px 12px;
+    spacing: 4px;
+    color: #6f6f6f;
+    font-size: .8em;
+}
+
+.search-section-results {
+    color: #ffffff;
+    padding: 6px;
+}
+
+.search-section-list-results {
+    spacing: 4px;
+}
+
+.results-container {
+    spacing: 4px;
+}
+
+.search-providers-box {
+    spacing: 12px;
+}
+
+/* Text labels are an odd number of pixels tall. The uneven top and bottom
+ * padding compensates for this and ensures that the label is vertically
+ * centered */
+.dash-search-button {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.04);
+    background-gradient-start: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3);
+    color: #fff;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,0.3) 0px -1px 0px;
+    height: 25px;
+    width: 100px;
+    padding: 0 15px;
+}
+
+
+.dash-search-button:hover,
+.dash-search-button:selected{
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.04);
+    background-gradient-start: rgba(255,255,255,0.6);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3);
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.3) 0px -1px 0px;
+}
+
+
+.dash-search-button-label {
+    color: white;
+}
+
+
+.view-tab-title {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.04);
+    background-gradient-start: rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3);
+    color: #fff;
+    font: 9pt;
+    font-weight: bold; 
+    height: 23px;
+    padding: 0 20px;
+    width: 80px;
+
+}
+
+.view-tab-title:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: 0px;
+}
+
+.view-tab-title:last-child {
+    border-radius: 0 4px 4px 0;
+    border-left: 0px;    
+}
+
+.view-tab-title:hover {
+    text-shadow: rgba(255,255,255,.0.9) 1px 2px 2px;     
+}
+
+.view-tab-title:selected {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.1);
+    background-gradient-start: rgba(255,255,255,0.02);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.7);
+    text-shadow: rgba(0,0,0,0.5) 0px 1px 0px;
+}

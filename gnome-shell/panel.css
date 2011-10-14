@@ -1,0 +1,170 @@
+
+/* Panel */
+
+#panel {
+    border: 1px solid rgba(0,0,0,0.2);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(227,227,227,0.6);
+    background-gradient-end: rgba(227,227,227,0.09);
+    color: rgba(255,255,255,0.98);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 24px;
+    box-shadow:  inset 0px -1px 0px 0px rgba(255,255,255,0.2);
+    font-size: 8.7pt;
+    font-weight: bold;
+}
+
+#panelLeft, #panelCenter {
+    spacing: 4px;
+    font-weight: bold;
+}
+
+#panelLeft:ltr {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-left: 4px;
+}
+
+#panelRight:ltr {
+    padding-left: 4px;
+}
+
+#panelRight:rtl {
+    padding-right: 4px;
+}
+
+.panel-corner {
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+}
+
+
+#appMenu {
+    spacing: 4px;
+    color: rgba(255,255,255,0.98);
+    padding: 1px 6px;
+    border: 1px  rgba(0,0,0,0.15);
+    background-color: rgba(255,255,255,0.3);
+    box-shadow:  inset 0px -1px 0px 0px rgba(255,255,255,0.15);
+    border-radius: 4px;
+}
+
+.panel-button > StIcon {
+    icon-size: 16px;
+    padding: 1px 3px;
+}
+
+.panel-button #appMenuIcon {
+    width: 0px;
+    height: 0px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+
+}
+
+.app-menu-icon {
+}
+
+.panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 2px;
+    transition-duration: 100;
+}
+
+.panel-button:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0);
+    background-gradient-end: rgba(255,255,255,0.4);
+    box-shadow: inset 0px -1px 1px 0px rgba(255,255,255,0.5);
+    transition-duration: 250;
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(0,0,0,0.2);
+    background-gradient-end: rgba(255,255,255,0.1);
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.2);
+    color: rgba(255,255,255,0.8);
+    text-shadow: rgba(0,0,0,0.2) 0px -1px 0px;
+}
+
+.panel-status-button:active,
+.panel-status-button:checked,
+.panel-status-button:focus {
+    background-image: url("img/panel-button-highlight-narrow.svg");
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+    icon-shadow: rgba{0,0,0,0.8} 0px -1px 0px;
+}
+
+.panel-menu {
+    -boxpointer-gap: 4px
+}
+
+#panelUserMenu {
+    spacing: 4px;
+}
+
+.status-chooser {
+    spacing: .4em;
+}
+
+.status-chooser .popup-menu-item,
+.status-chooser-combo .popup-menu-item {
+    padding: .4em;
+}
+
+.status-chooser-user-icon {
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    width: 32pt;
+    height: 32pt;
+}
+
+.status-chooser-user-icon:hover {
+    border: 1px solid #bbbbbb;
+}
+
+.status-chooser-user-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    min-width: 120pt;
+}
+
+.status-chooser-combo {
+    border: 1px solid transparent;
+    color: black;
+}
+
+.status-chooser-combo.popup-combo-menu {
+    background-color: rgba(255,255,255,0.98);
+    padding: .4em 0em;
+    border-radius: 4px;
+    border: 1px solid #5f5f5f;
+    color: #000;
+    font-size: 10.5pt;
+}
+
+.status-chooser-status-item,
+.status-chooser-combo .popup-combobox-item {
+    spacing: .4em;
+}
+
+.system-status-icon {
+    icon-size: 16px;
+}

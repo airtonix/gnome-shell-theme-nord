@@ -1,0 +1,102 @@
+/* App Switcher */
+#altTabPopup {
+    padding: 11px;
+    spacing: 16px;
+    background: rgba(0,0,0,0.3);
+}
+
+.switcher-list {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.6);
+    background-gradient-start: rgba(255,255,255,0.89);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.2);
+    color: rgba(0,0,0,0.8);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-shadow: rgba(255,255,255,0.3) 0px 1px 0px;
+}
+
+.switcher-list-item-container {
+    spacing: 16px;
+}
+
+.thumbnail-scroll-gradient-left {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(51, 51, 51, 1.0);
+    background-gradient-end: rgba(51, 51, 51, 0);
+    border-radius: 4px;
+    border-radius-topright: 0px;
+    border-radius-bottomright: 0px;
+    width: 60px;
+}
+
+.thumbnail-scroll-gradient-right {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255,255, 51, 0);
+    background-gradient-end: rgba(51, 51, 51, 1.0);
+    border-radius: 4px;
+    border-radius-topleft: 0px;
+    border-radius-bottomleft: 0px;
+    width: 60px;
+}
+
+.switcher-list .item-box {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.switcher-list .item-box:outlined {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.6);
+    background-gradient-start: rgba(255,255,255,0.9);   
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.4) ;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.4);
+    color: rgba(0,0,0,0.8);
+}
+
+.switcher-list .item-box:selected {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.6);
+    background-gradient-start: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.4);
+    color: rgba(0,0,0,0.8);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.4); 
+}
+
+
+.switcher-list .thumbnail-box {
+    padding: 2px;
+    spacing: 4px;
+}
+
+.switcher-list .thumbnail {
+    width:  250px;
+}
+
+.switcher-list .separator {
+    width: 1px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.ripple-box {
+    width: 52px;
+    height: 52px;
+    background-image: url("img/corner-ripple.png");
+}
+
+.switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: #808080;
+}
+
+.switcher-arrow:highlighted {
+    border-color: rgba(0,0,0,0);
+    color: white;
+}
+

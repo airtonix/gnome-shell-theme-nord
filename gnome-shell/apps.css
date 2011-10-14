@@ -1,0 +1,228 @@
+/* Apps */
+
+.icon-grid {
+    spacing: 70px;
+    -shell-grid-item-size: 100px;
+}
+
+.contact-grid {
+    spacing: 36px;
+    -shell-grid-item-size: 272px; /* 2 * -shell-grid-item-size + spacing */
+}
+
+.icon-grid .overview-icon {
+    icon-size: 65px;
+}
+
+.all-app {
+    padding: 2px 0 5px 16px;
+    spacing: 70px;
+}
+
+.all-app:rtl {
+    padding-right: 2px;
+    padding-left: 16px;
+}
+
+
+.all-app .icon-grid {
+    padding: 15px 20px;
+}
+
+
+/*This section controls the app categories*/
+/*I'm using a lot of stuff here, just to make the whole thing look consistent with the rest of the UI*/
+
+.app-filter {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0;    
+    color: #fff;
+    font: 9pt;
+    font-weight: bold; 
+    height: 25px;
+    width: 120px;
+    padding: 4px 0px 4px 15px ;
+    margin-right: 0px;
+    box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,0.3);    
+}
+
+.app-filter:first-child{
+    border-radius: 4px 0 0 0;
+    border-bottom: 0px;
+    border-right: 0;
+    box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,0.3);    
+    border-top: 1px;
+}    
+
+.app-filter:last-child{
+    border-radius: 0 0 0 4px;
+    border-right: 0;    
+    border-top: 0px;
+    border-bottom: 1px;
+    box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,0.3);    
+}
+.app-filter:hover {
+    background-gradient-direction: horizontal;
+    background-gradient-end: rgba(255,255,255,0.1);
+    background-gradient-start: rgba(255,255,255,0.36);
+/*    border: 1px solid rgba(0,0,0,0.1);*/
+    border-right: 0;
+    padding: 4px 0px 4px 15px ;
+    color: rgba(255,255,255,1);
+}
+
+.app-filter:hover:first-child{
+    border-radius: 4 0 0 0;
+    padding: 4px 0px 4px 15px ;    
+}
+
+.app-filter:hover:last-child{
+    border-radius: 0 0 0 4px;
+    padding: 4px 0px 4px 15px ;      
+}
+
+.app-filter:selected {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.6);
+    background-gradient-start: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 1px 1px 0px 0px rgba(255,255,255,0.2);
+    color: rgba(0,0,0,0.65);
+    text-shadow: rgba(255,255,255,1) 0px -1px 0px;    
+    padding: 4px 0px 4px 15px ;   
+}
+
+.app-filter:selected:first-child{
+    padding: 4px 0px 4px 15px ;   
+}
+
+.app-filter:selected:last-child{
+    border-bottom: 1px;
+    border-radius: 0 0 0 4px;      
+}
+/*End right categories*/
+
+
+.dash-item-container > .app-well-app {
+    padding: 3px 3px;
+}
+
+.remove-favorite-icon {
+    color: #E6E6E6;
+    icon-shadow: #000 0px -1px 0px;
+}
+
+.remove-favorite-icon:hover {
+    color: #191919;
+    icon-shadow: rgba(255,255,255,0.2) 0px 1px 0px;
+}
+
+
+.app-well-app > .overview-icon,
+.remove-favorite > .overview-icon,
+.search-result-content > .overview-icon {
+    color: rgba(255,255,255,1.0);
+    font: 7pt;
+    padding: 4px;
+    spacing: 10px;
+    text-align: center;
+    transition-duration: 100;
+}
+
+
+.app-well-app.running > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.6);
+    background-gradient-start: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.2);
+    color: rgba(0,0,0,0.9);
+}
+
+.contact:selected,
+.app-well-app:selected > .overview-icon,
+.search-result-content:selected > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.04);
+    background-gradient-start: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.4); 
+    color: rgba(255,255,255,0.9);
+}
+
+.app-well-app:hover > .overview-icon,
+.remove-favorite:hover > .overview-icon,
+.search-result-content:hover > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-end: rgba(255,255,255,0.04);
+    background-gradient-start: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.9);   
+    padding: 3px;
+}
+
+.contact:focus,
+.app-well-app:focus > .overview-icon,
+.search-result-content:focus > .overview-icon {
+}
+
+.app-well-menu {
+    font-size: 9pt;
+}
+
+/*Contacts*/
+
+
+.contact {
+    width: 272px; /* Same width as two normal results + spacing */
+    height: 118px; /* Aspect ratio = 1.75. Normal US business card ratio */
+    border-radius: 4px;
+    padding: 3px;
+    border: 1px rgba(0,0,0,0);
+    transition-duration: 100;
+}
+
+.contact-content {
+    border-radius: 2px;
+    padding: 8px;
+    width: 232px;
+    height: 84px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.contact-icon {
+  border-radius: 4px;
+}
+
+.contact-details {
+  padding: 6px 8px 11px 8px;
+}
+
+.contact-details-alias {
+  font-size: 16px;
+  padding-bottom: 11px;
+}
+
+.contact-details-status {
+  font-size: 11pt;
+}
+
+.contact-details-status-icon {
+  padding-right: 2px;
+}
+
+.contact:hover {
+    background-color: rgba(255,255,255,0.1);
+    transition-duration: 100;
+}
