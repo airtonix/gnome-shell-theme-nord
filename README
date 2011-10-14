@@ -1,9 +1,28 @@
-#
+
 # NordFork
-#  A gnome shell theme
-#
-# Original Author : http://0rax0.deviantart.com/
-#  Original Theme : http://0rax0.deviantart.com/art/GNOME-Shell-Nord-214295138
 
+  A gnome shell theme
 
+* Original Author : http://0rax0.deviantart.com/
+*  Original Theme : http://0rax0.deviantart.com/art/GNOME-Shell-Nord-214295138
 
+## Requirements
+
+* git
+	To download this project.
+	
+* Droid Sans
+	To display as intended by the original author.
+
+* Gnome Shell Tweak Tool
+	To select and enable this theme
+
+## Installation
+
+1. mkdir ~/.themes
+2. cd ~/.themes
+3. git clone git://github.com/airtonix/gnome-shell-theme-nord.git ./nord
+4. Open gnome-tweak-tool
+5. Select the theme
+6. alt+f2
+7. r [enter]
